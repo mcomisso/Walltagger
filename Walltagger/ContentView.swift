@@ -29,8 +29,7 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 Text(currentSystem + " " + currentVersion)
-                    .font(.system(size: 60))
-                    .fontDesign(.rounded)
+                    .font(.system(size: 60, design: .rounded))
                     .bold()
                     .foregroundStyle(textColor)
                     .padding(.bottom)
@@ -57,7 +56,7 @@ struct ContentView: View {
                             .padding()
                     }
                 })
-                .inspector(isPresented: $showSettings) {
+                .sheet(isPresented: $showSettings) {
                     VStack {
                         ColorPicker(selection: $colorTop, supportsOpacity: false) {
                             Text("Top color")
@@ -73,10 +72,10 @@ struct ContentView: View {
                 }
         }
         .onAppear { render() }
-        .onChange(of: self.colorTop) { _, _ in
+        .onChange(of: self.colorTop) { _ in
             render()
         }
-        .onChange(of: self.colorBottom) { _, _ in
+        .onChange(of: self.colorBottom) { _ in
             render()
         }
     }
