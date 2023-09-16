@@ -7,6 +7,29 @@
 
 import SwiftUI
 
+struct SettingsSheet: View {
+    @Binding var colorTop: Color
+    @Binding var colorBottom: Color
+    @Binding var textColor: Color
+
+    var body: some View {
+        VStack {
+            ColorPicker(selection: $colorTop, supportsOpacity: false) {
+                Text("Top gradient color")
+            }
+
+            ColorPicker(selection: $colorBottom, supportsOpacity: false) {
+                Text("Bottom gradient color")
+            }
+
+            ColorPicker(selection: $textColor, label: {
+                Text("Text color")
+            })
+        }
+        .padding()
+    }
+}
+
 struct ContentView: View {
     @Environment(\.displayScale) var displayScale
 
@@ -57,16 +80,11 @@ struct ContentView: View {
                     }
                 })
                 .sheet(isPresented: $showSettings) {
-                    VStack {
-                        ColorPicker(selection: $colorTop, supportsOpacity: false) {
-                            Text("Top color")
-                        }
-
-                        ColorPicker(selection: $colorBottom, supportsOpacity: false) {
-                            Text("Bottom color")
-                        }
-                    }
-                    .padding()
+                    SettingsSheet(
+                        colorTop: $colorTop,
+                        colorBottom: $colorBottom,
+                        textColor: $textColor
+                    )
                     .presentationDetents([.fraction(0.2)])
                     .presentationDragIndicator(.visible)
                 }
