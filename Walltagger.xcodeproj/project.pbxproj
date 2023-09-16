@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B99B72272AB628E30016773C /* WalltaggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B72262AB628E30016773C /* WalltaggerApp.swift */; };
+		B99B72292AB628E30016773C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B72282AB628E30016773C /* ContentView.swift */; };
+		B99B722B2AB628E50016773C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99B722A2AB628E50016773C /* Assets.xcassets */; };
+		B99B722E2AB628E50016773C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99B722D2AB628E50016773C /* Preview Assets.xcassets */; };
+		B99B72382AB628E50016773C /* WalltaggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B72372AB628E50016773C /* WalltaggerTests.swift */; };
+		B99B72422AB628E50016773C /* WalltaggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B72412AB628E50016773C /* WalltaggerUITests.swift */; };
+		B99B72442AB628E50016773C /* WalltaggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B72432AB628E50016773C /* WalltaggerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B99B72342AB628E50016773C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B99B721B2AB628E30016773C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B99B72222AB628E30016773C;
+			remoteInfo = Walltagger;
+		};
+		B99B723E2AB628E50016773C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B99B721B2AB628E30016773C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B99B72222AB628E30016773C;
+			remoteInfo = Walltagger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B99B72232AB628E30016773C /* Walltagger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walltagger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99B72262AB628E30016773C /* WalltaggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalltaggerApp.swift; sourceTree = "<group>"; };
+		B99B72282AB628E30016773C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B99B722A2AB628E50016773C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B99B722D2AB628E50016773C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B99B72332AB628E50016773C /* WalltaggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalltaggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99B72372AB628E50016773C /* WalltaggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalltaggerTests.swift; sourceTree = "<group>"; };
+		B99B723D2AB628E50016773C /* WalltaggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalltaggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99B72412AB628E50016773C /* WalltaggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalltaggerUITests.swift; sourceTree = "<group>"; };
+		B99B72432AB628E50016773C /* WalltaggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalltaggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B99B72202AB628E30016773C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99B72302AB628E50016773C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99B723A2AB628E50016773C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B99B721A2AB628E30016773C = {
+			isa = PBXGroup;
+			children = (
+				B99B72252AB628E30016773C /* Walltagger */,
+				B99B72362AB628E50016773C /* WalltaggerTests */,
+				B99B72402AB628E50016773C /* WalltaggerUITests */,
+				B99B72242AB628E30016773C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B99B72242AB628E30016773C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B99B72232AB628E30016773C /* Walltagger.app */,
+				B99B72332AB628E50016773C /* WalltaggerTests.xctest */,
+				B99B723D2AB628E50016773C /* WalltaggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B99B72252AB628E30016773C /* Walltagger */ = {
+			isa = PBXGroup;
+			children = (
+				B99B72262AB628E30016773C /* WalltaggerApp.swift */,
+				B99B72282AB628E30016773C /* ContentView.swift */,
+				B99B722A2AB628E50016773C /* Assets.xcassets */,
+				B99B722C2AB628E50016773C /* Preview Content */,
+			);
+			path = Walltagger;
+			sourceTree = "<group>";
+		};
+		B99B722C2AB628E50016773C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B99B722D2AB628E50016773C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B99B72362AB628E50016773C /* WalltaggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B99B72372AB628E50016773C /* WalltaggerTests.swift */,
+			);
+			path = WalltaggerTests;
+			sourceTree = "<group>";
+		};
+		B99B72402AB628E50016773C /* WalltaggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B99B72412AB628E50016773C /* WalltaggerUITests.swift */,
+				B99B72432AB628E50016773C /* WalltaggerUITestsLaunchTests.swift */,
+			);
+			path = WalltaggerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B99B72222AB628E30016773C /* Walltagger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99B72472AB628E50016773C /* Build configuration list for PBXNativeTarget "Walltagger" */;
+			buildPhases = (
+				B99B721F2AB628E30016773C /* Sources */,
+				B99B72202AB628E30016773C /* Frameworks */,
+				B99B72212AB628E30016773C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Walltagger;
+			productName = Walltagger;
+			productReference = B99B72232AB628E30016773C /* Walltagger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B99B72322AB628E50016773C /* WalltaggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99B724A2AB628E50016773C /* Build configuration list for PBXNativeTarget "WalltaggerTests" */;
+			buildPhases = (
+				B99B722F2AB628E50016773C /* Sources */,
+				B99B72302AB628E50016773C /* Frameworks */,
+				B99B72312AB628E50016773C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B99B72352AB628E50016773C /* PBXTargetDependency */,
+			);
+			name = WalltaggerTests;
+			productName = WalltaggerTests;
+			productReference = B99B72332AB628E50016773C /* WalltaggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B99B723C2AB628E50016773C /* WalltaggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99B724D2AB628E50016773C /* Build configuration list for PBXNativeTarget "WalltaggerUITests" */;
+			buildPhases = (
+				B99B72392AB628E50016773C /* Sources */,
+				B99B723A2AB628E50016773C /* Frameworks */,
+				B99B723B2AB628E50016773C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B99B723F2AB628E50016773C /* PBXTargetDependency */,
+			);
+			name = WalltaggerUITests;
+			productName = WalltaggerUITests;
+			productReference = B99B723D2AB628E50016773C /* WalltaggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B99B721B2AB628E30016773C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B99B72222AB628E30016773C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B99B72322AB628E50016773C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B99B72222AB628E30016773C;
+					};
+					B99B723C2AB628E50016773C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B99B72222AB628E30016773C;
+					};
+				};
+			};
+			buildConfigurationList = B99B721E2AB628E30016773C /* Build configuration list for PBXProject "Walltagger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B99B721A2AB628E30016773C;
+			productRefGroup = B99B72242AB628E30016773C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B99B72222AB628E30016773C /* Walltagger */,
+				B99B72322AB628E50016773C /* WalltaggerTests */,
+				B99B723C2AB628E50016773C /* WalltaggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B99B72212AB628E30016773C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99B722E2AB628E50016773C /* Preview Assets.xcassets in Resources */,
+				B99B722B2AB628E50016773C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99B72312AB628E50016773C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99B723B2AB628E50016773C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B99B721F2AB628E30016773C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99B72292AB628E30016773C /* ContentView.swift in Sources */,
+				B99B72272AB628E30016773C /* WalltaggerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99B722F2AB628E50016773C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99B72382AB628E50016773C /* WalltaggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99B72392AB628E50016773C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99B72442AB628E50016773C /* WalltaggerUITestsLaunchTests.swift in Sources */,
+				B99B72422AB628E50016773C /* WalltaggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B99B72352AB628E50016773C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B99B72222AB628E30016773C /* Walltagger */;
+			targetProxy = B99B72342AB628E50016773C /* PBXContainerItemProxy */;
+		};
+		B99B723F2AB628E50016773C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B99B72222AB628E30016773C /* Walltagger */;
+			targetProxy = B99B723E2AB628E50016773C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B99B72452AB628E50016773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B99B72462AB628E50016773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B99B72482AB628E50016773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Walltagger/Preview Content\"";
+				DEVELOPMENT_TEAM = B82WJF6RBY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomisso.Walltagger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B99B72492AB628E50016773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Walltagger/Preview Content\"";
+				DEVELOPMENT_TEAM = B82WJF6RBY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomisso.Walltagger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B99B724B2AB628E50016773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B82WJF6RBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomisso.WalltaggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walltagger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Walltagger";
+			};
+			name = Debug;
+		};
+		B99B724C2AB628E50016773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B82WJF6RBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomisso.WalltaggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Walltagger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Walltagger";
+			};
+			name = Release;
+		};
+		B99B724E2AB628E50016773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B82WJF6RBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomisso.WalltaggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Walltagger;
+			};
+			name = Debug;
+		};
+		B99B724F2AB628E50016773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B82WJF6RBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mcomisso.WalltaggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Walltagger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B99B721E2AB628E30016773C /* Build configuration list for PBXProject "Walltagger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99B72452AB628E50016773C /* Debug */,
+				B99B72462AB628E50016773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99B72472AB628E50016773C /* Build configuration list for PBXNativeTarget "Walltagger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99B72482AB628E50016773C /* Debug */,
+				B99B72492AB628E50016773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99B724A2AB628E50016773C /* Build configuration list for PBXNativeTarget "WalltaggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99B724B2AB628E50016773C /* Debug */,
+				B99B724C2AB628E50016773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99B724D2AB628E50016773C /* Build configuration list for PBXNativeTarget "WalltaggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99B724E2AB628E50016773C /* Debug */,
+				B99B724F2AB628E50016773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B99B721B2AB628E30016773C /* Project object */;
+}
