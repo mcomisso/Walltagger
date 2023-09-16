@@ -33,6 +33,7 @@ struct ContentView: View {
                     .fontDesign(.rounded)
                     .bold()
                     .foregroundStyle(textColor)
+                    .padding(.bottom)
             }
         }
     }
@@ -81,9 +82,11 @@ struct ContentView: View {
     }
 
     @MainActor func render() {
+        let screenSize = UIScreen.main.bounds.size
         let renderer = ImageRenderer(content: background)
+        
         renderer.isOpaque = true
-        renderer.proposedSize = .infinity
+        renderer.proposedSize = .init(width: screenSize.width, height: screenSize.height)
         renderer.scale = displayScale
 
         if let uiImage = renderer.uiImage {
