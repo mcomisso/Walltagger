@@ -13,20 +13,22 @@ struct SettingsSheet: View {
     @Binding var textColor: Color
 
     var body: some View {
-        VStack {
-            ColorPicker(selection: $colorTop, supportsOpacity: false) {
-                Text("Top gradient color")
-            }
+        ScrollView {
+            VStack {
+                ColorPicker(selection: $colorTop, supportsOpacity: false) {
+                    Text("Top gradient color")
+                }
 
-            ColorPicker(selection: $colorBottom, supportsOpacity: false) {
-                Text("Bottom gradient color")
-            }
+                ColorPicker(selection: $colorBottom, supportsOpacity: false) {
+                    Text("Bottom gradient color")
+                }
 
-            ColorPicker(selection: $textColor, label: {
-                Text("Text color")
-            })
+                ColorPicker(selection: $textColor, label: {
+                    Text("Text color")
+                })
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
@@ -50,12 +52,12 @@ struct ContentView: View {
                 .ignoresSafeArea()
 
             VStack {
-                Spacer()
                 Text(currentSystem + " " + currentVersion)
                     .font(.system(size: 60, design: .rounded))
                     .bold()
                     .foregroundStyle(textColor)
                     .padding(.bottom)
+                    .offset(y: 120)
             }
         }
     }
@@ -70,13 +72,16 @@ struct ContentView: View {
                         } label: {
                             Label("Settings", systemImage: "gear")
                         }
-                        .labelStyle(.iconOnly)
-                        .padding()
                     }
 
                     ToolbarItem(placement: .topBarTrailing) {
-                        ShareLink("Export", item: renderedImage, preview: SharePreview(Text("Background image"), image: renderedImage))
-                            .padding()
+                        ShareLink("Export", 
+                                  item: renderedImage,
+                                  preview: SharePreview(
+                                    Text("Wallpaper for \(currentVersion)"),
+                                    image: renderedImage
+                                  )
+                        )
                     }
                 })
                 .sheet(isPresented: $showSettings) {
